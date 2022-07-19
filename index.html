@@ -1,0 +1,348 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="icon" href="./img/logof.png">
+    <title>Tailwind Portfolio</title>
+  </head>
+  <body class="font-nunito">
+    <!-- into section -->
+    <div
+      class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden"
+    >
+      <!-- navbar -->
+      <nav class="w-full fixed top-0 bg-white z-30 dark:bg-slate-900">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <img class="w-8" src="./img/logof.png" alt="" />
+            <span class="text-2xl font-bold text-indigo-900 dark:text-white"
+              >Tailwindcss.</span
+            >
+          </div>
+          <ul
+            class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase"
+          >
+            <li class="hover:text-indigo-500">
+              <a href="#">Homepage</a>
+            </li>
+            <li class="hover:text-indigo-500">
+              <a href="#project">Projects</a>
+            </li>
+            <li class="hover:text-indigo-500">
+              <a href="#skills">Skills</a>
+            </li>
+            
+            
+          </ul>
+          <img
+            id="moon"
+            src="./img/moon.png"
+            class="hidden md:block w-5 cursor-pointer"
+            alt=""
+          />
+          <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+          </div>
+          <ul
+            id="menu"
+            class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
+          >
+            <li>
+              <a id="hLink" href="#">Homepage</a>
+            </li>
+            <li>
+              <a id="hLink" href="#project">Projects</a>
+            </li>
+            <li>
+              <a id="hLink" href="#skills">Skills</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+      <!-- intro content -->
+     
+      <!-- image --> 
+      <div
+                class="absolute z-0 top-0 w-full h-full bg-cover bg-middle pt-20 px-12 text-white text-center"
+                style="background-image: url('img/background.jpg')"
+            ></div>
+
+
+            <div
+            class="relative z-10 flex min-h-screen h-auto justify-center items-center "
+        >
+            <div class="relative max-w-4xl">
+                
+                <div
+                    class="relative z-20 bg-white md:flex justify-between p-12 shadow-lg rounded-lg w-full max-w-4xl  dark:bg-slate-900"
+                >
+                    <div
+                        class="sm:flex flex-col justify-between  space-y-6 py-6 md:pr-10"
+                    >
+                        <div>
+                            <h2 class="text-lg  dark:text-white">Hello, I am</h2>
+                            <h1 class="pt-1 text-5xl font-bold text-sky-500 ">
+                                Vinaya Datta
+                            </h1>
+                        </div>
+                        <p class="text-xl leading-relaxed  dark:text-white">
+                            I am a freshman studying Electrical and Electronics Engineering at BITS Pilani, K K Birla Goa Campus.
+                            I am from Hyderabad, Telengana.
+                            I am passionate about building websites and like to play cricket :)
+                        </p>
+                       
+                    </div>
+                    <img
+                        src="img/portrait.jpg"
+                        alt=""
+                        class="flex-shrink-0 w-60 rounded-full border-6 border-white shadow-md"
+                    />
+                </div>
+            </div>
+            </div>
+     </div>
+    </div>
+    
+    
+    <!-- project -->
+    <div id="project" class="px-10 dark:bg-slate-900">
+      <div
+        class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20"
+      >
+        <!-- left -->
+        <div class="relative ">
+          <img
+            class="h-1/4 absolute top-0 left-0 -z-10 "
+            src="./img/dots.png"
+            alt=""
+          />
+          <div class="h-full rounded-full overflow-hidden transition-all hover:scale-110">
+            <img src="./img/web1.jpg" alt="" />
+          </div>
+        </div>
+        <!-- right -->
+        <div class="my-auto flex flex-col gap-3">
+          <h1 class="text-indigo-600 font-bold">Project 1</h1>
+          <h1 class="text-3xl font-medium dark:text-white">Gym website</h1>
+          <h1 class="text-3xl font-medium dark:text-white">
+            Using only HTML and CSS
+          </h1>
+          <p class="text-gray-400">
+            This was my first try for a website and it is made of only HTML and CSS. It is a website which has a form and a great background. 
+          </p>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="px-10  dark:bg-slate-900">
+      <div
+        class="container mx-auto py-30 flex flex-col-reverse lg:flex-row items-center gap-20"
+      >
+        <!-- left -->
+        <div class="my-auto flex flex-col gap-3">
+          <h1 class="text-indigo-600 font-bold">Project 2</h1>
+          <h1 class="text-3xl font-medium dark:text-white">Taxi Website</h1>
+          <h1 class="text-3xl font-medium dark:text-white">
+            Using only HTML and CSS
+          </h1>
+          <p class="text-gray-400">
+            This was my second try for a website and it is made of only HTML and CSS. It is a website which has different options and a great background.
+          </p>
+          
+          </div>
+
+        <!-- right -->
+        <div class="relative ">
+          <img
+            class="h-1/4 absolute top-0 left-0 -z-10"
+            src="./img/dots.png"
+            alt=""
+          />
+          <div class="h-full rounded-full overflow-hidden transition-all hover:scale-110">
+            <img src="./img/web3.jpg" alt="" />
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+    
+    <div class="px-10 dark:bg-slate-900">
+      <div
+        class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20 "
+      >
+        <!-- left -->
+        <div class="relative">
+          <img
+            class="h-1/4 absolute top-0 left-0 -z-10 "
+            src="./img/dots.png"
+            alt=""
+          />
+          <div class="h-full rounded-full overflow-hidden transition-all hover:scale-110">
+            <img src="./img/web2.jpg" alt="" />
+          </div>
+        </div>
+        <!-- right -->
+        <div class="my-auto flex flex-col gap-3">
+          <h1 class="text-indigo-600 font-bold">Project 3</h1>
+          <h1 class="text-3xl font-medium dark:text-white">Portfolio</h1>
+          <h1 class="text-3xl font-medium dark:text-white">
+            Using only HTML and CSS
+          </h1>
+          <p class="text-gray-400">
+            This was my third try for a website and it is made of only HTML and CSS. It is a website which uses tailwind css.
+          </p>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- skills -->
+    <div id="skills">
+    <section class="bg-gray-50 pt-20 pb-28 px-8  dark:bg-slate-900">
+      <div class="max-w-6xl mx-auto">
+          <div class="text-center">
+              <h1 class="text-6xl font-bold text-gray-800  dark:text-white">Skills</h1>
+              <p class="pt-2  dark:text-white">Learnt/Learning</p>
+          </div>
+          <div
+              class="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20"
+          >
+              <div class="relative">
+                  <div
+                      class="absolute z-10 inset-0 bg-gradient-to-r from-cyan-400 to-emerald-400 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg"
+                  ></div>
+
+                  <div
+                      class="relative z-20 bg-white h-full rounded-md shadow-md px-10 py-12 transition-all hover:scale-110"
+                  >
+                      <ion-icon
+                          name="phone-portrait-outline"
+                          class="text-5xl text-cyan-500"
+                      ></ion-icon>
+                      <h2 class="pt-3 font-bold text-2xl">
+                          Web Development
+                      </h2>
+                      <p class="pt-3">
+                          I am a budding web development enthusiast. I have worked on a few peronal projects. I am learning HTML, CSS and Node.js.
+                      </p>
+                  </div>
+              </div>
+              <div class="relative">
+                  <div
+                      class="absolute z-10 inset-0 bg-gradient-to-r from-cyan-400 to-emerald-400 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg"
+                  ></div>
+
+                  <div
+                      class="relative z-20 bg-white h-full rounded-md shadow-md px-10 py-12 transition-all hover:scale-110"
+                  >
+                      <ion-icon
+                          name="layers-outline"
+                          class="text-5xl text-cyan-500"
+                      ></ion-icon>
+                      <h2 class="pt-3 font-bold text-2xl">Photo Editing</h2>
+                      <p class="pt-3">
+                        I am a budding photo editing enthusiast. I have worked on a few peronal projects. I am learning photoshop.
+                      </p>
+                  </div>
+              </div>
+              <div class="relative">
+                  <div
+                      class="absolute z-10 inset-0 bg-gradient-to-r from-cyan-400 to-emerald-400 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg"
+                  ></div>
+
+                  <div
+                      class="relative z-20 bg-white h-full rounded-md shadow-md px-10 py-12 transition-all hover:scale-110"
+                  >
+                      <ion-icon
+                          name="chatbubbles-outline"
+                          class="text-5xl text-cyan-500"
+                      ></ion-icon>
+                      <h2 class="pt-3 font-bold text-2xl">
+                          C Language
+                      </h2>
+                      <p class="pt-3">
+                        I am fond of learning new programming languages and am currently learning C as a part of my academic requirement.
+                      </p>
+                  </div>
+              </div>
+              <div class="relative">
+                <div
+                    class="absolute z-10 inset-0 bg-gradient-to-r from-cyan-400 to-emerald-400 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg"
+                ></div>
+
+                <div
+                    class="relative z-20 bg-white h-full rounded-md shadow-md px-10 py-12 transition-all hover:scale-110"
+                >
+                    <ion-icon
+                        name="chatbubbles-outline"
+                        class="text-5xl text-cyan-500"
+                    ></ion-icon>
+                    <h2 class="pt-3 font-bold text-2xl">
+                        C++ Language
+                    </h2>
+                    <p class="pt-3">
+                      I am an enthusiast in learning new programming languages. I am learning C++ as part of my projects.
+                    </p>
+                </div>
+            </div>
+            <div class="relative">
+              <div
+                  class="absolute z-10 inset-0 bg-gradient-to-r from-cyan-400 to-emerald-400 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-lg"
+              ></div>
+
+              <div
+                  class="relative z-20 bg-white h-full rounded-md shadow-md px-10 py-12 transition-all hover:scale-110"
+              >
+                  <ion-icon
+                      name="chatbubbles-outline"
+                      class="text-5xl text-cyan-500"
+                  ></ion-icon>
+                  <h2 class="pt-3 font-bold text-2xl">
+                      Python Language
+                  </h2>
+                  <p class="pt-3">
+                    I am an enthusiast in learning new programming languages. I am learning python as part of my projects.
+                  </p>
+              </div>
+          </div>
+          </div>
+      </div>
+  </section>
+</div>
+    
+ <!-- footer -->
+    <div class="w-full bg-gray-800">
+      <div class="container mx-auto py-5 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <img class="w-8" src="./img/logof.png" alt="" />
+          <span class="text-2xl font-bold text-white">#Using Tailwindcss.</span>
+        </div>
+        <span class="hidden md:block font-medium text-white"
+          >© 2022 Copyright reserved</span
+        >
+        <div class="flex gap-2">
+          <img class="w-4 cursor-pointer" src="./img/facebook.png" alt="" />
+          <img class="w-4 cursor-pointer" src="./img/instagram.png" alt="" />
+          <img class="w-4 cursor-pointer" src="./img/twitter.png" alt="" />
+          <img class="w-4 cursor-pointer" src="./img/linkedin.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+    
+  </body>
+</html>
